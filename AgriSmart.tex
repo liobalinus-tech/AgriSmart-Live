@@ -1,0 +1,74 @@
+\documentclass[11pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{titlesec}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}[{\titlerule[0.8pt]}]
+\titleformat{\subsection}{\bfseries}{\thesubsection}{1em}{}
+
+\title{\textbf{AgriSmart Africa: Precision Agriculture Decision Support System}}
+\author{Lioba Tweukondjela Linus}
+\date{April 2026}
+
+\begin{document}
+
+\maketitle
+
+\section*{Executive Summary}
+Agricultural productivity in African regions is highly vulnerable to fluctuating environmental conditions, particularly soil acidity and unpredictable rainfall patterns. Small-scale farmers often rely on traditional knowledge or reactive measures, leading to suboptimal crop selection and reduced yields. \textbf{AgriSmart Africa} is a predictive data intelligence platform that leverages mathematical modeling and data engineering to deliver localized crop suitability assessments. By translating complex soil and climate variables into actionable planting guidance, AgriSmart empowers farmers to transition from traditional guesswork to data-driven precision agriculture.
+
+\section{Background and Context}
+Small-scale agriculture remains the backbone of regional food security, yet it faces increasing pressure from climate variability. Traditional methods of crop selection often fail to account for hyper-local soil chemistry (pH) and shifting annual precipitation. There is a critical need for accessible, predictive intelligence that provides neighborhood-level agricultural insights for decision-makers on the ground.
+
+\section{Problem Statement}
+City planners and regional agricultural officers currently lack access to integrated, localized, and predictive suitability data. As a result:
+\begin{itemize}[noitemsep]
+    \item Infrastructure for food security is prioritized only after damage or crop failure occurs.
+    \item Climate-adaptation funding decisions lack quantitative justification.
+    \item Emergency responses to drought or soil degradation are delayed and inefficient.
+\end{itemize}
+
+\section{Proposed Solution: AgriSmart Africa}
+AgriSmart is a predictive decision-support platform that integrates open-source environmental data with machine learning to deliver high-resolution suitability assessments for urban and peri-urban farming. The platform provides:
+\begin{itemize}[noitemsep]
+    \item \textbf{Predictive Yield-Potential Maps:} Visualizing compatibility across various soil scenarios.
+    \item \textbf{Explainable AI (XAI) Constraint Analysis:} Identifying stressors such as root rot risks or drought stress.
+    \item \textbf{Digital Twin Dashboard:} A historical audit trail for long-term farm resilience and urban planning.
+\end{itemize}
+
+\section{Mathematical Modeling and Technical Approach}
+The system demonstrates technical mastery through a modular architecture that decouples mathematical logic from the user interface.
+\begin{itemize}
+    \item \textbf{Vector Similarity Engine:} The system utilizes a \textbf{Weighted Euclidean Distance} model:
+    \[ d = \sqrt{\sum w_i (x_i - y_i)^2} \]
+    \item \textbf{Feature Engineering:} All inputs are normalized via \textbf{Min-Max Scaling} to ensure uniform sensitivity across disparate units (pH vs. Rainfall).
+    \item \textbf{Domain-Specific Weighting:} The model prioritizes critical biological constraints by applying $1.5\times$ weights to soil pH, reflecting its non-linear impact on nutrient bioavailability.
+    \item \textbf{Inference Logic:} Suitability scores are derived via an exponential decay function $S = e^{-d}$, simulating real-world "crop stress" thresholds.
+\end{itemize}
+
+\section{Target Users and Stakeholders}
+\begin{itemize}[noitemsep]
+    \item \textbf{Primary:} City governments, urban planning departments, and small-scale cooperatives.
+    \item \textbf{Secondary:} Disaster management agencies and infrastructure engineering firms.
+\end{itemize}
+
+\section{Implementation and Responsibilities}
+\begin{table}[h]
+\centering
+\begin{tabular}{lp{10cm}}
+\toprule
+\textbf{Track} & \textbf{Responsibility} \\ \midrule
+Data Science & Develop weighted vector similarity models and implement Min-Max scaling logic for feature engineering. \\
+Backend & Build a robust PostgreSQL data pipeline for historical record persistence and secure environment management. \\
+Frontend & Design the Digital Twin dashboard with interactive visualizations for agricultural decision-making. \\
+Product Design & Translate high-level mathematical outputs into actionable insights for non-technical users. \\ \bottomrule
+\end{tabular}
+\end{table}
+
+\section{Conclusion}
+AgriSmart Africa addresses the gap between climate science and field-level decision-making. By leveraging mathematical rigor and modular architecture, the platform enables cities and farmers to anticipate risks, protect livelihoods, and build a resilient agricultural future.
+
+\end{document}
