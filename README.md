@@ -1,7 +1,7 @@
 # 🌱 AgriSmart Live
 ### Predictive Climate-Intelligence for Precision Agriculture
 
-AgriSmart Live is a **data-driven platform** that leverages **weighted vector similarity models** and real-time environmental data to provide localized crop suitability assessments[cite: 6, 32].
+AgriSmart Live is a **data-driven platform** that leverages **weighted vector similarity models** and real-time environmental data to provide localized crop suitability assessments.
 
 ## 🛠️ Technical Mastery
 - **Backend:** PostgreSQL integration for historical record persistence and automated updates.
